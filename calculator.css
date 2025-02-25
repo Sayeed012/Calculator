@@ -1,0 +1,76 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+
+
+}
+#calculator {
+  padding: 1px 12px 1px 12px;
+  background-color: rgb(53, 53, 53);
+  border-radius: 5px;
+  width: 340px;
+  height: 700px;
+
+}
+#display {
+  background-color: rgb(241, 241, 241);
+  margin: 10px 3px 3px 4px;
+  border-radius: 5px;
+  height: 100px;
+  font-size: large;
+  text-align: right;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  width: 325px;
+}
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  flex-wrap: wrap;
+  column-gap: 6px;
+  row-gap: 8px;
+  
+}
+#cut {
+  font-size:large;
+  font-weight: 500;
+}
+.button {
+  border: none;
+  color: rgb(228, 228, 228);
+  background-color: rgb(65, 65, 65);
+  width: 75px;
+  height: 75px;
+  border-radius: 15px;
+  box-shadow: 4px 2px 4px rgb(95, 95, 95);
+}
+#plus, #minus, #multiply, #divide {
+  color: gold;
+}
+#plus, #minus, #divide, #equal {
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+#cut, #cancel {
+  color: rgb(243, 47, 33);
+  font-weight: 600;
+}
+.button:active {
+  transform: scale(0.9); /* Slightly shrink the button */
+  background-color: rgb(100, 100, 100); /* Darker color on click */
+  box-shadow: 2px 1px 2px rgb(75, 75, 75); /* Reduce shadow */
+}
+#text {
+  color: rgb(155, 155, 155);
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 3px;
+}

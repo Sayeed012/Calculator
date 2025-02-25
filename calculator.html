@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  <div id="calculator">
+    <input type="text" id="display">
+    <div class="button-container">
+      <button class="button" id="divide" onclick="
+      if (navigator.vibrate) {
+        navigator.vibrate(70); // Vibrates for 50 milliseconds
+      }
+      currentDisplay += '/';
+      document.querySelector('#display').value = currentDisplay;
+      ">÷</button>
+      <button class="button" id="multiply" onclick="
+      if (navigator.vibrate) {
+        navigator.vibrate(70); // Vibrates for 50 milliseconds
+      }
+      currentDisplay += '*';
+      document.querySelector('#display').value = currentDisplay;
+      ">X</button>
+      <button class="button" id="minus" onclick="
+      if (navigator.vibrate) {
+        navigator.vibrate(70); // Vibrates for 50 milliseconds
+      }
+      currentDisplay += '-';
+      document.querySelector('#display').value = currentDisplay;
+      ">-</button>
+      <button class="button" id="plus" onclick="
+      if (navigator.vibrate) {
+        navigator.vibrate(70); // Vibrates for 50 milliseconds
+      }
+      currentDisplay += '+';
+      document.querySelector('#display').value = currentDisplay;
+      ">+</button>
+      <button class="button" onclick="
+      if (navigator.vibrate) {
+        navigator.vibrate(70); // Vibrates for 50 milliseconds
+      }
+      currentDisplay += '7';
+      document.querySelector('#display').value = currentDisplay;
+      ">7</button>
+      <button class="button" onclick="
+      if (navigator.vibrate) {
+        navigator.vibrate(70); // Vibrates for 50 milliseconds
+      }
+      currentDisplay += '8';
+      document.querySelector('#display').value = currentDisplay;
+      ">8</button>
+      <button class="button" onclick="
+      if (navigator.vibrate) {
+        navigator.vibrate(70); // Vibrates for 50 milliseconds
+      }
+      currentDisplay += '9';
+      document.querySelector('#display').value = currentDisplay;
+      ">9</button>
+      <button class="button" id="cut" onclick="
+      if (navigator.vibrate) {
+        navigator.vibrate(70); // Vibrates for 50 milliseconds
+      }
+      currentDisplay = currentDisplay.slice(0, -1);
+      document.querySelector('#display').value = currentDisplay;
+      ">⌫</button>
+      <button class="button" onclick="
+      if (navigator.vibrate) {
+        navigator.vibrate(70); // Vibrates for 50 milliseconds
+      }
+      currentDisplay += '4';
+      document.querySelector('#display').value = currentDisplay;
+      ">4</button>
+      <button class="button" onclick="
+      if (navigator.vibrate) {
+        navigator.vibrate(70); // Vibrates for 50 milliseconds
+      }
+      currentDisplay += '5';
+      document.querySelector('#display').value = currentDisplay;
+      ">5</button>
+      <button class="button" onclick="
+      if (navigator.vibrate) {
+        navigator.vibrate(70); // Vibrates for 50 milliseconds
+      }
+      currentDisplay += '6';
+      document.querySelector('#display').value = currentDisplay;
+      ">6</button>
+      <button class="button" id="cancel" onclick="
+      if (navigator.vibrate) {
+        navigator.vibrate(70); // Vibrates for 50 milliseconds
+      }
+      currentDisplay = '';
+      document.querySelector('#display').value = currentDisplay;
+      ">C</button>
+      <button class="button" onclick="
+      if (navigator.vibrate) {
+        navigator.vibrate(70); // Vibrates for 50 milliseconds
+      }
+      currentDisplay += '1';
+      document.querySelector('#display').value = currentDisplay;
+      ">1</button>
+      <button class="button" onclick="
+      if (navigator.vibrate) {
+        navigator.vibrate(70); // Vibrates for 50 milliseconds
+      }
+      currentDisplay += '2';
+      document.querySelector('#display').value = currentDisplay;
+      ">2</button>
+      <button class="button" onclick="
+      if (navigator.vibrate) {
+        navigator.vibrate(70); // Vibrates for 50 milliseconds
+      }
+      currentDisplay += '3';
+      document.querySelector('#display').value = currentDisplay;
+      ">3</button>
+      <button class="button" id="equal" onclick="
+      if (navigator.vibrate) {
+        navigator.vibrate(70); // Vibrates for 50 milliseconds
+      }
+      let result = eval(currentDisplay);
+      currentDisplay = result;
+      document.querySelector('#display').value = currentDisplay;
+      ">=</button>
+      <button class="button" onclick="
+      if (navigator.vibrate) {
+        navigator.vibrate(70); // Vibrates for 50 milliseconds
+      }
+      currentDisplay += '.';
+      document.querySelector('#display').value = currentDisplay;
+      ">.</button>
+      <button class="button" onclick="
+      if (navigator.vibrate) {
+        navigator.vibrate(70); // Vibrates for 50 milliseconds
+      }
+      currentDisplay += '0';
+      document.querySelector('#display').value = currentDisplay;
+      ">0</button>
+    </div>
+    <h1 id="text">Calculator</h1>
+  </div>
+  
+  <script>
+    let currentDisplay = '';
+    document.querySelector('#display').value = currentDisplay;
+  </script>
+</body>
+</html>
